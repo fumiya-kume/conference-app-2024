@@ -6,7 +6,6 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import conference_app_2024.feature.sponsors.generated.resources.platinum_sponsor
 import io.github.droidkaigi.confsched.designsystem.theme.KaigiTheme
@@ -18,7 +17,7 @@ import org.jetbrains.compose.ui.tooling.preview.Preview
 fun SponsorHeader(text: String, modifier: Modifier = Modifier) {
     Text(
         text = text,
-        color = Color.Green, // FIXME: use theme color
+        color = MaterialTheme.colorScheme.secondary,
         style = MaterialTheme.typography.titleMedium,
         modifier = modifier.padding(vertical = 6.dp),
     )
